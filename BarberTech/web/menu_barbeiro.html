@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BARBERTECH</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adiciona os links para os arquivos do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top:0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .content {
+            margin-top: 15em;
+            text-align: center;
+        }
+
+        .botao-voltar {
+            position: absolute;
+            left: 1em;
+            top: 0.8em;
+            height: 2em;
+            width: 2em;
+        }
+
+        .botao {
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .botao:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-primary text-white text-center py-3">
+    <h1>BARBERTECH</h1>
+</header>
+
+<div class="content">
+    <a href="listar/cliente/listagem.jsp" class="btn btn-primary botao">Consultar clientes</a><br>
+    <a href="autenticar/pedirb_cpf.jsp?valor=listar" class="btn btn-primary mt-3 botao">Minha Agenda</a>
+</div>
+
+<!-- Adiciona os scripts do Bootstrap (jQuery e Popper.js são necessários para alguns recursos do Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

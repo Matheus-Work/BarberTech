@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu do Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adiciona os links para os arquivos do Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f9fa; /* Fundo sutil */
+                margin: 0; /* Remover margens padrão do corpo */
+            }
+            .menu-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 15em; /* Adiciona espaço para o header fixo */
+            }
+            .botao {
+                height: auto;
+                width: 7em;
+                font-size: 1.2em; /* Tamanho da fonte aumentado */
+                border-radius: 10px; /* Borda mais arredondada */
+                margin-top: 15px; /* Espaçamento superior aumentado */
+            }
+            .botao:hover {
+                background-color: #0069d9; /* Cor de fundo ao passar o mouse */
+                border-color: #0062cc; /* Cor da borda ao passar o mouse */
+            }
+            header {
+                background-color: #007bff;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+            }
+            header h1 {
+                font-size: 2rem;
+                margin: 0;
+            }
+            .botao-voltar {
+                position: absolute;
+                left: 1em;
+                top: 0.8em;
+                height: 2em;
+                width: 2em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header class="bg-primary text-white text-center py-3">
+            <h1>BARBERTECH</h1>
+        </header>
+
+        <div class="menu-container">
+            <a href="autenticar/pedir_cpf.jsp?valor=agendar" class="btn btn-primary botao">Agendar</a><br>
+            <a href="autenticar/pedir_cpf.jsp?valor=listar" class="btn btn-primary mt-3 botao">Minha Agenda</a>
+        </div>
+
+        <!-- Adiciona os scripts do Bootstrap (jQuery e Popper.js são necessários para alguns recursos do Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
